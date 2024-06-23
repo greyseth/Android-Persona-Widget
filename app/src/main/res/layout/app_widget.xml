@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/widgetBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_widget_3" />
+
+        <LinearLayout
+            android:id="@+id/timeDisplayContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/timeDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"
+                    android:textColor="@color/textcol"
+                    android:layout_marginRight="6dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/bg_circle_primary" />
+
+                <TextView
+                    android:id="@+id/dayDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mo"
+                    android:textColor="@color/textcol"
+                    android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_below="@+id/timeDisplayContainer"
+            android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/timeDescriptionShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="DAYTIME"
+                    android:textColor="@color/textcol"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="DAYTIME"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/updateIndicator"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentEnd="true"
+            android:text="NOT UPDATED"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateIndicator"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/moonPhase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HALF"
+                    android:textColor="@color/white_half"
+                    android:layout_marginRight="12dp"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/moonPhaseImg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/moon_2"/>
+        </LinearLayout>
+</RelativeLayout>

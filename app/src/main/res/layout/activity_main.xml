@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/moonBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Moon Request"/>
+
+    <Button
+        android:id="@+id/weatherBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Weather Request"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/latInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:hint="Default Latitude"/>
+    <EditText
+        android:id="@+id/longInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:hint="Default Longitude"/>
+    <Button
+        android:id="@+id/posBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Default Position"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/locBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Current Location"/>
+</LinearLayout>
